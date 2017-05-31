@@ -239,8 +239,10 @@
 <blockquote>
 <p>首先，先确定todolist可以拆分的组件。</p>
 <ol>
-<li><a href="https://www.codeproject.com/Articles/866143/Learn-MVC-step-by-step-in-days-Day" target="_blank" rel="external">Learn MVC Project in 7 days</a></li>
-<li><a href="http://www.cnblogs.com/winter-cn/p/4285171.html" target="_blank" rel="external">谈谈UI架构设计的演化</a></li>
+<li>为了添加任务，为此我们需要一个用作任务的输入框和按钮。那么我们可以将这些东西打包成一个组件，组件名为addTodo</li>
+<li>显示添加了的任务，并能对任务是否完成进行操作。—&gt;打包组件为todos</li>
+<li>将所完成的任务显示出来，并显示完成时间。—&gt;打包组件为todoItem</li>
+<li>纵观全局，如果要清晰知道目前有多少任务的话，可以在最顶加上一个nabar将目前还没有完成的任务显示出来。—&gt;打包为nabar</li>
 </ol>
 </blockquote>
 
