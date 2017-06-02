@@ -25,7 +25,7 @@
 为了添加任务，为此我们需要一个用作任务的输入框和按钮。那么我们可以将这些东西打包成一个组件，组件名为addTodo
 显示添加了的任务，并能对任务是否完成进行操作">
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodo.png">
-<meta property="og:updated_time" content="2017-06-02T09:46:22.758Z">
+<meta property="og:updated_time" content="2017-06-02T09:47:32.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue + vue-cli 组件化todolist日志">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;vue的核心是组件化，对于网路上各种各样的todolist，可以将todolist拆分成几个部分进行组件化，使得如若需要更改某个组件的样式的话就能直接更改组件即可。
@@ -193,9 +193,10 @@
 <li>将所完成的任务显示出来，并显示完成时间。—&gt;打包组件为todoItem</li>
 <li>纵观全局，如果要清晰知道目前有多少任务的话，可以在最顶加上一个nabar将目前还没有完成的任务显示出来。—&gt;打包为nabar</li>
 </ol>
-<p>ps：vue-cli的安装教程已经在README给出<br><a id="more"></a></p>
-<h2 id="一、添加任务（addTodo"><a href="#一、添加任务（addTodo" class="headerlink" title="一、添加任务（addTodo"></a>一、添加任务（addTodo</h2><p>对于vue来说，创建组件文件后直接在主页进行渲染就可以了。<br>创建addTodo.vue并进行引用，相关代码和测试如图</p>
+<p>ps：vue-cli的安装教程已经在README给出</p>
 </blockquote>
+<a id="more"></a>
+<h2 id="一、添加任务（addTodo"><a href="#一、添加任务（addTodo" class="headerlink" title="一、添加任务（addTodo"></a>一、添加任务（addTodo</h2><p>对于vue来说，创建组件文件后直接在主页进行渲染就可以了。<br>创建addTodo.vue并进行引用，相关代码和测试如图</p>
 <p><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodo.png" width="70%" height="70%"><br>代码里创建了一个todos数组用于存储新添加的newtodo，当按下按钮后，将newtodo的数据传向todos，然后将todos的数据json序列化在展示出来。</p>
 
       
