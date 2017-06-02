@@ -29,7 +29,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItem.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItemJs.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItemShow.png">
-<meta property="og:updated_time" content="2017-06-02T10:54:12.020Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todolistMainPage.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todolistnabar.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todolistMainShow.png">
+<meta property="og:updated_time" content="2017-06-02T11:14:07.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue + vue-cli 组件化todolist日志">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;vue的核心是组件化，对于网路上各种各样的todolist，可以将todolist拆分成几个部分进行组件化，使得如若需要更改某个组件的样式的话就能直接更改组件即可。这个是链接
@@ -204,6 +207,7 @@
 <p><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodo.png" width="70%" height="70%"><br>代码里创建了一个todos数组用于存储新添加的newtodo，当按下按钮后，将newtodo的数据传向todos，然后将todos的数据json序列化再展示出来。</p>
 <p><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodoShow.png" width="70%" height="70%"><br>在浏览器端进行添加操作，添加了三个任务，都存在于todos里面。</p>
 <h2 id="二、显示目前任务和已完成任务（todoItem"><a href="#二、显示目前任务和已完成任务（todoItem" class="headerlink" title="二、显示目前任务和已完成任务（todoItem"></a>二、显示目前任务和已完成任务（todoItem</h2><p>在这个组件里，重点在于父组件与子组件间的数据传递。vue提供了props的属性，这样我们可以将数据的本体存于主页面todos.vue里面，将主页面看成父组件并向addTodo组件和todoItem组件传递数据进行操作。在主页面我们先设置两组空数组，一组todos用于储存添加的任务列表，一组hasFinish用于储存完成的任务列表。<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItem.png" width="70%" height="70%"><br>v-for对数组进行数据取出然后渲染显示。<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItemJs.png" width="70%" height="70%"><br>相关数据的操作。数据设置一个标记flag进行标记任务是否完成，完成的话将其反赋值，并将当前时间进行一个统计，再将新的一组带有新标记和时间的数据压入到hasFinish数组里面<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItemShow.png" width="70%" height="70%"><br>测试结果。</p>
+<h2 id="三、添加nabar，显示当前进行的任务数量（nabar"><a href="#三、添加nabar，显示当前进行的任务数量（nabar" class="headerlink" title="三、添加nabar，显示当前进行的任务数量（nabar"></a>三、添加nabar，显示当前进行的任务数量（nabar</h2><p>因为统计的是todos数组里面的所有任务量，而任务是否完成由标记flag去进行判断。因为在主页面使用的组件和数据组，所以计算这一操作放到了主页面上面。<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todolistMainPage.png" width="70%" height="70%"><br>用js的filter过滤函数过滤掉任务标记为完成的数据，并进行计算。每个数据都是用相关的（:子组件数据名=”父组件数据名”）方式进行数值传递<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todolistnabar.png" width="70%" height="70%"><br>这个组件直接就是一个数值传递过来就好了，样式什么的可以随便改，也不会影响到其他组件。<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todolistMainShow.png" width="70%" height="70%"><br>这样我们可以看到顶上的task数值有了变化。</p>
 
       
 
