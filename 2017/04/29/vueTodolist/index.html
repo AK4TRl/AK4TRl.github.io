@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodo.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodoShow.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItem.png">
-<meta property="og:updated_time" content="2017-06-02T10:35:04.536Z">
+<meta property="og:updated_time" content="2017-06-02T10:37:40.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue + vue-cli 组件化todolist日志">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;vue的核心是组件化，对于网路上各种各样的todolist，可以将todolist拆分成几个部分进行组件化，使得如若需要更改某个组件的样式的话就能直接更改组件即可。
@@ -201,7 +201,7 @@
 <h2 id="一、添加任务（addTodo"><a href="#一、添加任务（addTodo" class="headerlink" title="一、添加任务（addTodo"></a>一、添加任务（addTodo</h2><p>对于vue来说，创建组件文件后直接在主页进行渲染就可以了。<br>创建addTodo.vue并进行引用，相关代码和测试如图</p>
 <p><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodo.png" width="70%" height="70%"><br>代码里创建了一个todos数组用于存储新添加的newtodo，当按下按钮后，将newtodo的数据传向todos，然后将todos的数据json序列化再展示出来。</p>
 <p><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/addTodoShow.png" width="70%" height="70%"><br>在浏览器端进行添加操作，添加了三个任务，都存在于todos里面。</p>
-<p>##二、显示目前任务和已完成任务（todoItem<br>在这个组件里，重点在于父组件与子组件间的数据传递。vue提供了props的属性，这样我们可以将数据的本体存于主页面todos.vue里面，将主页面看成父组件并向addTodo组件和todoItem组件传递数据进行操作。在主页面我们先设置两组空数组，一组todos用于储存添加的任务列表，一组hasFinish用于储存完成的任务列表。<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItem.png" width="70%" height="70%"></p>
+<h2 id="二、显示目前任务和已完成任务（todoItem"><a href="#二、显示目前任务和已完成任务（todoItem" class="headerlink" title="二、显示目前任务和已完成任务（todoItem"></a>二、显示目前任务和已完成任务（todoItem</h2><p>在这个组件里，重点在于父组件与子组件间的数据传递。vue提供了props的属性，这样我们可以将数据的本体存于主页面todos.vue里面，将主页面看成父组件并向addTodo组件和todoItem组件传递数据进行操作。在主页面我们先设置两组空数组，一组todos用于储存添加的任务列表，一组hasFinish用于储存完成的任务列表。<br><img src="https://raw.githubusercontent.com/AK4TRl/AK4TRl.github.io/master/img/todoItem.png" width="70%" height="70%"></p>
 
       
 
